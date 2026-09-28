@@ -1,9 +1,13 @@
 # bunny-dive
 <p align="center">
-  <img src="src/assets/bunny-dive-logo.png" alt="Bunny Dive logo" width="160" />
+  <img src="/bunny-dive-logo.png" alt="Bunny Dive logo" width="160" />
 </p>
 
 <h1 align="center">Bunny Dive</h1>
+
+<p align="center">
+  <a href="https://bunnydive.pages.dev">bunnydive.com</a>
+</p>
 
 <p align="center">
   <em>Go down the rabbit hole. Start with any topic, follow the trail, see where it leads.</em>
