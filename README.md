@@ -37,7 +37,7 @@ You type in a topic (say, *Black hole* or *Renaissance*) and Bunny Dive shows yo
 **Requirements:** Node.js 18 or newer.
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/melisalevli/bunny-dive.git
 cd bunny-dive
 npm install
 npm run dev
