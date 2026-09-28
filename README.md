@@ -1,6 +1,6 @@
 # bunny-dive
 <p align="center">
-  <img src="/bunny-dive-logo.png" alt="Bunny Dive logo" width="160" />
+  <img src="public/bunny-dive-logo.png" alt="Bunny Dive logo" width="160" />
 </p>
 
 <h1 align="center">Bunny Dive</h1>
