@@ -1,0 +1,38 @@
+:root {
+  --plum: #330C2F;
+  --purple: #7B287D;
+  --periwinkle: #7067CF;
+  --lavender: #B7C0EE;
+  --mint: #CBF3D2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--plum);
+  color: var(--lavender);
+  font-family: 'Archivo', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Archivo Black', sans-serif;
+  letter-spacing: -0.5px;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input {
+  font-family: inherit;
+  outline: none;
+}
