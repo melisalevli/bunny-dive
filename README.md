@@ -1,9 +1,13 @@
 # bunny-dive
 <p align="center">
-  <img src="src/assets/bunny-dive-logo.png" alt="Bunny Dive logo" width="160" />
+  <img src="public/bunny-dive-logo.png" alt="Bunny Dive logo" width="160" />
 </p>
 
 <h1 align="center">Bunny Dive</h1>
+
+<p align="center">
+  <a href="https://bunnydive.pages.dev">bunnydive.com</a>
+</p>
 
 <p align="center">
   <em>Go down the rabbit hole. Start with any topic, follow the trail, see where it leads.</em>
@@ -33,7 +37,7 @@ You type in a topic (say, *Black hole* or *Renaissance*) and Bunny Dive shows yo
 **Requirements:** Node.js 18 or newer.
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/melisalevli/bunny-dive.git
 cd bunny-dive
 npm install
 npm run dev
