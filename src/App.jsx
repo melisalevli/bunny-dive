@@ -9,6 +9,7 @@ import { DetailPanel } from './components/DetailPanel';
 import { ProgressBar } from './components/ProgressBar';
 import { translations } from './utils/i18n';
 import { pad2 } from './utils/constants';
+import loadingGif from '/loading.gif';
 import './styles/global.css';
 import './styles/graph.css';
 
@@ -69,8 +70,11 @@ export default function App() {
       )}
       {screen === 'complete' && (
         <div className="complete-screen">
-          <div>
-            <h1>{t.completeTitle}</h1>
+          <div className="complete-content">
+            <div className="complete-title-row">
+              <img src={loadingGif} alt="" className="complete-gif" />
+              <h1>{t.completeTitle}</h1>
+            </div>
             <p style={{ margin: '10px 0 20px', opacity: 0.75 }}>
               {t.completeSub.replace('{count}', visited.size)}
             </p>

@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { ReactFlow, Background, Controls, ReactFlowProvider, useReactFlow } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import CustomNode from './CustomNode';
+import loadingGif from '/loading.gif';
 
 const nodeTypes = { custom: CustomNode };
 const FIT_VIEW_BOUNDS = { minZoom: 0.5, maxZoom: 1.3 };
@@ -72,9 +73,25 @@ const FlowInner = ({ nodes, edges, onNodeClick, focusTarget, translationToken })
   );
 };
 
+const LOADER_DELAY_MS = 1000;
+
 export const GraphCanvas = ({ nodes, edges, onNodeClick, loading, t, focusTarget, translationToken }) => {
+  const [showLoader, setShowLoader] = useState(false);
+  useEffect(() => {
+    if (!loading) {
+      setShowLoader(false);
+      return;
+    }
+    const timer = setTimeout(() => setShowLoader(true), LOADER_DELAY_MS);
+    return () => clearTimeout(timer);
+  }, [loading]);
   return (
     <div className="canvas-wrapper">
+      {showLoader && (
+        <div className="loading-overlay" role="status" aria-live="polite">
+          <img src={loadingGif} alt={t.fetchingLinks} className="loading-gif" />
+        </div>
+      )}
       {loading && (
         <div style={{ position: 'absolute', top: 10, left: 10, zIndex: 10, background: 'var(--purple)', color: 'var(--mint)', padding: '6px 12px', fontSize: '12px', fontWeight: 'bold' }}>
           {t.fetchingLinks}

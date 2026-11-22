@@ -209,4 +209,48 @@
     max-height: none;
     overflow-y: visible;
   }
+  .canvas-loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 10;
+}
+
+  .canvas-loader img {
+    width: 64px;
+    height: auto;
+  }
+}
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  pointer-events: none;
+  background: transparent;
+}
+
+.loading-gif {
+  width: min(320px, 70vw);
+  height: auto;
+  background: transparent;
+}
+
+.complete-title-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.complete-gif {
+  width: 200px;
+  height: auto;
+  background: transparent;
 }

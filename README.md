@@ -88,7 +88,7 @@ Bunny Dive's interface takes its cues from **minimalist Bauhaus design**: form f
 
 **Typography.** Headings are set in **Archivo Black** and body text in **Archivo**. Section labels are small, uppercase, and letter-spaced.
 
-**The logo.** The bunny is hand-drawn by me. It is the only organic shape in an otherwise geometric interface; a soft, curious little animal set against a strict grid.
+**The logo.** The bunny is hand-drawn by me. It is an organic shape in an otherwise geometric interface; a soft animal set in a strict grid.
 
 ---
 
